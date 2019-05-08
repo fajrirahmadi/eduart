@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_nav_graph"
+            app:startDestination="@id/kelasFragment">
+    <fragment android:id="@+id/kelasFragment"
+              tools:layout="@layout/fragment_class"
+              android:label="KelasFragment"
+              android:name="arloji.life.smarthumanity.main.KelasFragment">
+    </fragment>
+</navigation>

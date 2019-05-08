@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/authentication_nav_graph"
+            app:startDestination="@id/loginFragment">
+
+    <fragment android:id="@+id/loginFragment"
+              tools:layout="@layout/fragment_login"
+              android:label="LoginFragment"
+              android:name="arloji.life.smarthumanity.authentication.LoginFragment">
+
+        <action android:id="@+id/action_move_fromLoginFragment_toMainActivity"
+                app:destination="@+id/mainActivity"
+                app:enterAnim="@anim/enter_from_right"
+                app:exitAnim="@anim/exit_to_left"/>
+    </fragment>
+
+    <activity android:id="@+id/mainActivity"
+              android:name="arloji.life.smarthumanity.MainActivity"
+              android:label="MainActivity"
+              tools:layout="@layout/activity_main"/>
+</navigation>

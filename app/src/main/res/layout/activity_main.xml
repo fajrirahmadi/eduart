@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/frameHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBar">
+        <fragment
+                android:id="@+id/home_nav_graph_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/home_nav_graph"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/frameClass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBar">
+        <fragment
+                android:id="@+id/kelasNavGraph"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/class_nav_graph"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/frameInbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBar">
+        <fragment
+                android:id="@+id/inboxNavGraph"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/inbox_nav_graph"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/frameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomBar">
+        <fragment
+                android:id="@+id/profileNavGraph"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/profile_nav_graph"/>
+    </FrameLayout>
+
+    <include
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/bottom_navigation_main"/>
+
+</RelativeLayout>

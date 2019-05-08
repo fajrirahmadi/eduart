@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="activity_id" type="id"/>
+    <item name="finance_id" type="id"/>
+    <item name="profile_menu_id" type="id"/>
+    <item name="activity_menu_id" type="id"/>
+    <item name="list_item_id" type="id"/>
+    <item name="wallet_id" type="id"/>
+    <item name="wallet_category_id" type="id"/>
+    <item name="target_category_id" type="id"/>
+    <item name="normal_list_id" type="id"/>
+    <item name="target_id" type="id"/>
+    <item name="detail_kelas_id" type="id"/>
+</resources>

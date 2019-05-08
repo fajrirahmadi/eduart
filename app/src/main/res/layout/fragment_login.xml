@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:padding="@dimen/margin_big"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+                style="@style/normalTextViewBlack"
+                android:layout_marginTop="@dimen/margin_very_large"
+                android:layout_gravity="center_horizontal"
+                android:text="Budaya adalah aset bangsa"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                style="@style/normalTextViewBlack"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_very_large"
+                android:textStyle="bold"
+                android:text="Ayo Belajar Budaya!"/>
+
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:id="@+id/emailInputLayout"
+                android:theme="@style/normalInputLayout">
+
+            <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/emailEditText"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    style="@style/normalEditText"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                style="@style/passwordInputLayout"
+                android:id="@+id/passwordInputLayout"
+                app:passwordToggleEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/passwordEditText"
+                    android:hint="@string/kata_sandi"
+                    android:inputType="textPassword"
+                    style="@style/normalEditText"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/forgotPasswordButton"
+                style="@style/normalTextViewWhite"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/text_color"
+                android:text="@string/label_forget_password"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/loginButton"
+                style="@style/normalButton"
+                android:background="@drawable/background_button_green_corner_enable"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/masuk"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                    style="@style/normalTextViewBlack"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/text_color"
+                    android:text="@string/label_not_have_account"/>
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/registerButton"
+                    style="@style/normalTextViewBlack"
+                    android:textStyle="bold"
+                    android:text="@string/daftar_sekarang"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_marginStart="@dimen/margin_very_small"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

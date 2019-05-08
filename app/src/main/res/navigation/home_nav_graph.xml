@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_nav_graph"
+            app:startDestination="@id/homeFragment">
+    <fragment android:id="@+id/homeFragment"
+              tools:layout="@layout/fragment_home"
+              android:label="HomeFragment"
+              android:name="arloji.life.smarthumanity.main.HomeFragment">
+        <action android:id="@+id/actionMove_fromHomeFragment_toDetailKelasActivity"
+                app:destination="@+id/detailKelasActivity"
+                app:enterAnim="@anim/enter_from_right"
+                app:exitAnim="@anim/exit_to_left"
+                app:popEnterAnim="@anim/exit_to_right"
+                app:popExitAnim="@anim/enter_from_left"/>
+    </fragment>
+
+    <activity android:id="@+id/detailKelasActivity"
+              tools:layout="@layout/activity_detail_kelas"
+              android:label="DetailKelasActivity"
+              android:name="arloji.life.smarthumanity.main.DetailKelasActivity"/>
+</navigation>
